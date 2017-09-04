@@ -1,0 +1,14 @@
+FROM ubuntu:14.04
+MAINTAINER lozovsky <lozovsky@apriorit.com>
+RUN apt-get update && apt-get install -y \
+    automake \
+    build-essential \
+    cmake \
+    curl \
+    gcc \
+    g++ \
+    git \
+    libcurl4-openssl-dev \
+    linux-headers-4.4.0-93-generic \
+    zlib1g-dev \
+ && rm -rf /var/lib/apt/lists/*
