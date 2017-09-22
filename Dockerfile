@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     linux-headers-4.4.0-93-generic \
+    sparse \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /var/cache/apt/*
 
