@@ -10,5 +10,6 @@ RUN apt-get update && apt-get install -y \
     git \
     libcurl4-openssl-dev \
     linux-headers-4.4.0-93-generic \
+    sparse \
     zlib1g-dev \
  && rm -rf /var/lib/apt/lists/*
