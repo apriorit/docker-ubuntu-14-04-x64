@@ -15,3 +15,5 @@ cd fswatch-1.9.3 && ./configure && make install && cd ../ && rm -rf fswatch-1.9.
 RUN cd /tmp && wget https://archive.apache.org/dist/thrift/0.9.3/thrift-0.9.3.tar.gz && tar xf thrift-0.9.3.tar.gz && cd thrift-0.9.3 && ./configure --without-qt4 --without-qt5 --without-java --without-ruby && make install && cd .. && rm -rf thrift-0.9.3 thrift-0.9.3.tar.gz
 RUN cd /tmp && wget http://nixos.org/releases/patchelf/patchelf-0.8/patchelf-0.8.tar.gz && tar xf patchelf-0.8.tar.gz && patchelf-0.8/configure && make install && rm -rf patchelf-0.8 && rm -f patchelf-0.8.tar.gz
 
+RUN apt-get install -y libgtest-dev
+RUN cd /usr/src/gtest/ && cmake . && make && cp *.a /usr/lib
