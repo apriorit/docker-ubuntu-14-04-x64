@@ -2,7 +2,7 @@
 FROM ubuntu:14.04
 MAINTAINER Volodymyr.Stovba <netpanik@apriorit.com>
 RUN apt-get update && apt-get install -y bison++ libssl-dev libprocps3-dev libxalan-c-dev libxerces-c-dev libnl-3-dev \
-libcrypto++-dev libcrypto++9 libpcre++-dev uuid-dev libsnappy-dev build-essential libboost-all-dev maven libicu-dev zlib1g-dev \
+libcrypto++-dev libcrypto++9 libpcre++-dev uuid-dev libsnappy-dev build-essential libboost-all-dev maven gdb libicu-dev zlib1g-dev \
 liblog4cpp5-dev libncurses5-dev libselinux1-dev wget libsqlite3-dev google-mock libvirt-dev libmysqlclient-dev qtbase5-dev qtdeclarative5-dev \
 libjpeg-turbo8-dev libnuma-dev automake autoconf autotools-dev libevent-dev thrift-compiler \
 libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libevent-dev \
