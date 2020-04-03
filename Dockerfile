@@ -17,3 +17,8 @@ RUN cd /tmp && wget http://nixos.org/releases/patchelf/patchelf-0.8/patchelf-0.8
 
 RUN apt-get install -y libgtest-dev
 RUN cd /usr/src/gtest/ && cmake . && make && cp *.a /usr/lib
+
+RUN apt-get install -y git bison
+# liblightgrep
+RUN cd /tmp && git clone --recursive https://github.com/ligen-ua/liblightgrep.git && cd liblightgrep && autoreconf -fi && ./configure --with-boost-libdir=/usr/lib/x86_64-linux-gnu/ && make && make install
+
