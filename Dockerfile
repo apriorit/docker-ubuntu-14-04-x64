@@ -8,7 +8,7 @@ libjpeg-turbo8-dev libnuma-dev automake autoconf autotools-dev libevent-dev thri
 libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libevent-dev \
 libtool flex pkg-config libssl-dev \
 libc6-dev-i386 gcc-multilib libc6-dev-i386 g++-multilib libblkid-dev \
-libimlib2-dev libimlib2 giblib-dev libgtk-3-dev libcanberra-gtk3-dev libpam0g-dev
+libimlib2-dev libimlib2 giblib-dev libgtk-3-dev libcanberra-gtk3-dev libpam0g-dev vim gdb ssh
 
 RUN cd /tmp && wget https://github.com/emcrisostomo/fswatch/releases/download/1.9.3/fswatch-1.9.3.tar.gz && tar xf fswatch-1.9.3.tar.gz && \
 cd fswatch-1.9.3 && ./configure && make install && cd ../ && rm -rf fswatch-1.9.3.tar.gz && rm -rf fswatch-1.9.3
