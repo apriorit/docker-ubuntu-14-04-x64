@@ -25,3 +25,5 @@ RUN cd /tmp && git clone --recursive https://github.com/ligen-ua/liblightgrep.gi
 # sqlite3
 RUN  cd /tmp && wget https://sqlite.org/src/tarball/version-3.31.1/sqlite.tar.gz && tar xf sqlite.tar.gz && cd sqlite && autoconf && ./configure && make && make install && cd .. && rm -rf sqlite sqlite.tar.gz
 
+# ext2fs
+RUN apt-get install -y e2fslibs-dev
